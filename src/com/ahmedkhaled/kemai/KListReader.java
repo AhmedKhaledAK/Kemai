@@ -25,6 +25,10 @@ public class KListReader {
         this.map = map;
     }
 
+    public void editInMap(String key){
+        editInMap(this.map, key);
+    }
+
     public void editInMap(){
         editInMap(this.map, this.key);
     }
@@ -36,6 +40,7 @@ public class KListReader {
         if (listString.charAt(0) != '[') {
             map.put(key, list);
         }
+
         this.map =  map;
     }
 
